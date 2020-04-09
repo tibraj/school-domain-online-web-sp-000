@@ -12,4 +12,11 @@ attr_reader :name, :roster
   def grade(grade)
     @roster[grade]
   end
+  def sort
+    sorted = {}
+      roster.each do |grade, student|
+        sorted[grade] = student.sort
+      end
+      sorted
+  end
 end

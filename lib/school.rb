@@ -10,5 +10,3 @@ attr_reader :name, :roster
     @roster[grade] << student
   end
 end
-
-
